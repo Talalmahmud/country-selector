@@ -151,7 +151,7 @@ function BangladeshSelector() {
                             />
                         </>
                     )}
-                    <button type="submit">submit</button>
+                    {selectedUnion && <button type="submit">Submit</button>}
                 </form>
             </div>
         </div>
