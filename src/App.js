@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import { bangladeshDivisions } from "./dataset";
+import { bangladeshDivisions as divisions } from "./dataset";
 import "./App.scss";
 
 function BangladeshSelector() {
-    const [divisions, setDivisions] = useState(bangladeshDivisions);
     const [division, setDivision] = useState("");
     const [districts, setDistricts] = useState([]);
     const [selectedDistrict, setSelectedDistrict] = useState("");
@@ -11,7 +10,7 @@ function BangladeshSelector() {
     const [selectedUpazila, setSelectedUpazila] = useState("");
     const [unions, setUnions] = useState([]);
     const [selectedUnion, setSelectedUnion] = useState("");
-    const [village, setVillage] = useState("null");
+    const [village, setVillage] = useState("");
 
     // // useEffect(() => {
     // //     fetch("https://example.com/api/bangladesh")
