@@ -2,9 +2,8 @@ import React, { useState } from "react";
 import { bangladeshDivisions } from "./dataset";
 import "./App.scss";
 
-const divisions = bangladeshDivisions;
-
 function BangladeshSelector() {
+    const [divisions, setDivisions] = useState(bangladeshDivisions);
     const [division, setDivision] = useState("");
     const [districts, setDistricts] = useState([]);
     const [selectedDistrict, setSelectedDistrict] = useState("");
@@ -25,6 +24,9 @@ function BangladeshSelector() {
         const dname = event.target.value;
         setDivision(dname);
         const zone = divisions.find((d) => d.name === dname);
+        if (!zone) {
+            return;
+        }
         setDistricts(zone.districts);
         setSelectedDistrict("");
         setSelectedUpazila("");
@@ -36,6 +38,9 @@ function BangladeshSelector() {
     const handleDistrictChange = (event) => {
         setSelectedDistrict(event.target.value);
         const zone = districts.find((d) => d.name === event.target.value);
+        if (!zone) {
+            return;
+        }
         setSelectedUpazila("");
         setSelectedUnion("");
         setUpazilas(zone.upazilas);
@@ -45,6 +50,9 @@ function BangladeshSelector() {
     const handleUpazilaChange = (event) => {
         setSelectedUpazila(event.target.value);
         const zone = upazilas.find((d) => d.name === event.target.value);
+        if (!zone) {
+            return;
+        }
         setUnions(zone.unions);
         setSelectedUnion("");
         setVillage("");
@@ -64,6 +72,13 @@ function BangladeshSelector() {
         console.log(
             ` Division: ${division} \n District: ${selectedDistrict} \n Upazila: ${selectedUpazila} \n Union: ${selectedUnion} \n Village:${village}`
         );
+        setDivision("");
+        setDistricts([]);
+        setSelectedDistrict("");
+        setUpazilas([]);
+        setSelectedUpazila("");
+        setUnions([]);
+        setSelectedUnion("");
     };
 
     return (
