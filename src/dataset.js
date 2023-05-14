@@ -1,26 +1,27 @@
 export const bangladeshDivisions = [
     {
-        name: "Dhaka",
+        name: "Barisal",
         districts: [
             {
-                name: "Dhaka",
+                name: "Barisal",
                 upazilas: [
                     {
-                        name: "Dhaka Sadar",
+                        name: "Barisal Sadar",
                         unions: [
-                            { name: "Baksibazar" },
-                            { name: "Bangshal" },
-                            { name: "Chakbazar" },
-                            { name: "Gendaria" }, // ...and so on            ],
+                            { name: "Ward No. 1" },
+                            { name: "Ward No. 2" },
+                            { name: "Ward No. 3" },
+                            { name: "Ward No. 4" },
+                            // ...and so on
                         ],
                     },
                     {
-                        name: "Mirpur",
+                        name: "Agailjhara",
                         unions: [
-                            { name: "Mirpur-1" },
-                            { name: "Mirpur-2" },
-                            { name: "Mirpur-3" },
-                            { name: "Mirpur-4" },
+                            { name: "Agailjhara" },
+                            { name: "Bakal" },
+                            { name: "Bansa" },
+                            { name: "Bara Baisdia" },
                             // ...and so on
                         ],
                     },
@@ -28,25 +29,25 @@ export const bangladeshDivisions = [
                 ],
             },
             {
-                name: "Gazipur",
+                name: "Barguna",
                 upazilas: [
                     {
-                        name: "Gazipur Sadar",
+                        name: "Amtali",
                         unions: [
-                            { name: "Budhpara" },
-                            { name: "Chandna" },
-                            { name: "Chashara" },
-                            { name: "Taltola" },
+                            { name: "Amtali" },
+                            { name: "Dularbazar" },
+                            { name: "Haldi" },
+                            { name: "Latachapli" },
                             // ...and so on
                         ],
                     },
                     {
-                        name: "Kaliakoir",
+                        name: "Bamna",
                         unions: [
-                            { name: "Bashamur" },
-                            { name: "Kaliakoir" },
-                            { name: "Mouchak" },
-                            { name: "Pubail" },
+                            { name: "Bamna" },
+                            { name: "Chhota Chandia" },
+                            { name: "Dakua" },
+                            { name: "Keorabunia" },
                             // ...and so on
                         ],
                     },
@@ -113,83 +114,118 @@ export const bangladeshDivisions = [
         ],
     },
     {
-        name: "Barisal",
-        upazilas: [
+        name: "Dhaka",
+        districts: [
             {
-                name: "Agailjhara",
-                unions: [
-                    { name: "Agailjhara" },
-                    { name: "Bagdha" },
-                    { name: "Bakal" },
-                    { name: "Baliatali" },
-                    { name: "Chhota Bagdha" },
-                    { name: "Dhulkhola" },
-                    { name: "Gouripur" },
-                    { name: "Kakrabunia" },
-                    { name: "Kalaskati" },
-                    { name: "Kathalia" },
-                    { name: "Machhuakhali" },
-                    { name: "Nurnagar" },
-                    { name: "Santoshpur" },
-                    { name: "Udaypur" },
+                name: "Dhaka",
+                upazilas: [
+                    {
+                        name: "Dhaka Sadar",
+                        unions: [
+                            { name: "Baksibazar" },
+                            { name: "Bangshal" },
+                            { name: "Chakbazar" },
+                            { name: "Gendaria" }, // ...and so on            ],
+                        ],
+                    },
+                    {
+                        name: "Mirpur",
+                        unions: [
+                            { name: "Mirpur-1" },
+                            { name: "Mirpur-2" },
+                            { name: "Mirpur-3" },
+                            { name: "Mirpur-4" },
+                            // ...and so on
+                        ],
+                    },
+                    // ...and so on
                 ],
             },
             {
-                name: "Babuganj",
-                unions: [
-                    { name: "Babuganj" },
-                    { name: "Banaripara" },
-                    { name: "Dariala" },
-                    { name: "Kashipur" },
-                    { name: "Kulkati" },
-                    { name: "Paisarhat" },
-                    { name: "Taluk Darial" },
+                name: "Gazipur",
+                upazilas: [
+                    {
+                        name: "Gazipur Sadar",
+                        unions: [
+                            { name: "Budhpara" },
+                            { name: "Chandna" },
+                            { name: "Chashara" },
+                            { name: "Taltola" },
+                            // ...and so on
+                        ],
+                    },
+                    {
+                        name: "Kaliakoir",
+                        unions: [
+                            { name: "Bashamur" },
+                            { name: "Kaliakoir" },
+                            { name: "Mouchak" },
+                            { name: "Pubail" },
+                            // ...and so on
+                        ],
+                    },
+                    // ...and so on
+                ],
+            },
+            // ...and so on
+        ],
+    },
+    {
+        name: "Khulna",
+        districts: [
+            {
+                name: "Bagerhat",
+                upazilas: [
+                    {
+                        name: "Bagerhat Sadar",
+                        unions: [
+                            { name: "Bagerhat" },
+                            { name: "Chitalmari" },
+                            { name: "Jatrapur" },
+                            { name: "Raghunathpur" },
+                            // ...and so on
+                        ],
+                    },
+                    {
+                        name: "Chitalmari",
+                        unions: [
+                            { name: "Chitalmari" },
+                            { name: "Gulishakhali" },
+                            { name: "Naldi" },
+                            { name: "Sonarkola" },
+                            // ...and so on
+                        ],
+                    },
+                    // ...and so on
                 ],
             },
             {
-                name: "Bakerganj",
-                unions: [
-                    { name: "Bakerganj" },
-                    { name: "Bighai" },
-                    { name: "Char Kalmi" },
-                    { name: "Dakuarhat" },
-                    { name: "Dhamura" },
-                    { name: "Hizla" },
-                    { name: "Kazirchar" },
-                    { name: "Rahamatpur" },
-                    { name: "Swarupkathi" },
-                    { name: "Thakur Mallik" },
+                name: "Chuadanga",
+                upazilas: [
+                    {
+                        name: "Alamdanga",
+                        unions: [
+                            { name: "Alamdanga" },
+                            { name: "Bhadai" },
+                            { name: "Birahimpur" },
+                            { name: "Kapasia" },
+                            // ...and so on
+                        ],
+                    },
+                    {
+                        name: "Chuadanga Sadar",
+                        unions: [
+                            { name: "Banshbaria" },
+                            { name: "Chuadanga" },
+                            { name: "Darshana" },
+                            { name: "Hatgram" },
+                            // ...and so on
+                        ],
+                    },
+                    // ...and so on
                 ],
             },
-            {
-                name: "Banaripara",
-                unions: [
-                    { name: "Banaripara" },
-                    { name: "Baraikhali" },
-                    { name: "Chandpasha" },
-                    { name: "Dhuliani" },
-                    { name: "Gauripur" },
-                    { name: "Kulishakhali" },
-                    { name: "Mulna" },
-                    { name: "Pak Shimul" },
-                    { name: "Rajapur" },
-                    { name: "Shialguni" },
-                ],
-            },
-            {
-                name: "Gaurnadi",
-                unions: [
-                    { name: "Bhandaria" },
-                    { name: "Chandshi" },
-                    { name: "Chhota Kajirtek" },
-                    { name: "Gouranadi" },
-                    { name: "Kajirtek" },
-                    { name: "Koralia" },
-                    { name: "Mohanpur" },
-                    { name: "Shatla" },
-                    { name: "Soladana" },
-                ],
-            },
+            // ...and so on
         ],
     },
     {
@@ -357,64 +393,6 @@ export const bangladeshDivisions = [
                             { name: "Khejurichhara" },
                             { name: "Narain Chora" },
                             { name: "Sreemangal" },
-                            // ...and so on
-                        ],
-                    },
-                    // ...and so on
-                ],
-            },
-            // ...and so on
-        ],
-    },
-    {
-        name: "Khulna",
-        districts: [
-            {
-                name: "Bagerhat",
-                upazilas: [
-                    {
-                        name: "Bagerhat Sadar",
-                        unions: [
-                            { name: "Bagerhat" },
-                            { name: "Chitalmari" },
-                            { name: "Jatrapur" },
-                            { name: "Raghunathpur" },
-                            // ...and so on
-                        ],
-                    },
-                    {
-                        name: "Chitalmari",
-                        unions: [
-                            { name: "Chitalmari" },
-                            { name: "Gulishakhali" },
-                            { name: "Naldi" },
-                            { name: "Sonarkola" },
-                            // ...and so on
-                        ],
-                    },
-                    // ...and so on
-                ],
-            },
-            {
-                name: "Chuadanga",
-                upazilas: [
-                    {
-                        name: "Alamdanga",
-                        unions: [
-                            { name: "Alamdanga" },
-                            { name: "Bhadai" },
-                            { name: "Birahimpur" },
-                            { name: "Kapasia" },
-                            // ...and so on
-                        ],
-                    },
-                    {
-                        name: "Chuadanga Sadar",
-                        unions: [
-                            { name: "Banshbaria" },
-                            { name: "Chuadanga" },
-                            { name: "Darshana" },
-                            { name: "Hatgram" },
                             // ...and so on
                         ],
                     },
